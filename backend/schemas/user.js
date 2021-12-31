@@ -1,6 +1,6 @@
 export default{
     name:'user',
-    titile:'User',
+    tile:'User',
     type:'document',
     fields:[
         {
