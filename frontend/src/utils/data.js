@@ -42,7 +42,7 @@ export const categories = [
     image: 'https://i.postimg.com/236x/6c/3c/52/6c3c529e8dadc7cffc4fddedd4caabe1.jpg',
   }, {
     name: 'dogs',
-    image: 'https://i.postimg.com/236x/1b/c8/30/1bc83077e363db1a394bf6a64b071e9f.jpg',
+    image: 'https://i.guim.co.uk/img/media/fe1e34da640c5c56ed16f76ce6f994fa9343d09d/0_174_3408_2046/master/3408.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=67773a9d419786091c958b2ad08eae5e',
   },
   {
     name: 'others',
