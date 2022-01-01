@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import { v4 as uuidv4 } from 'uuid';
 import { MdDownloadForOffline } from 'react-icons/md';
 import { AiTwotoneDelete } from 'react-icons/ai';
-import { BsFillArrowUpRightCircleFill } from 'react-icons/bs';
 import { urlFor, client } from '../../client'
 
 const Post = ({ post }) => {
@@ -11,7 +10,7 @@ const Post = ({ post }) => {
     const [postHovered, setPostHovered] = useState(false);
     const [savingPost, setSavingPost] = useState(false);
 
-    const { postedBy, image, _id, destination } = post;
+    const { postedBy, image, _id } = post;
 
     const user = localStorage.getItem('user') !== 'undefined' ? JSON.parse(localStorage.getItem('user')) : localStorage.clear();
 
