@@ -10,6 +10,7 @@ const Login = () => {
     const navigate = useNavigate()
 
     const responseGoogle = (res) => {
+        //console.log(res)
         localStorage.setItem('user', JSON.stringify(res.profileObj))
         const { name, googleId, imageUrl } = res.profileObj
         const document = {
