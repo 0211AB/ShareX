@@ -9,6 +9,8 @@ import { userIdQuery } from '../../utils/data';
 import { client } from '../../client';
 import Posts from '../Posts/Posts';
 
+import logo from '../../assets/logo.png'
+
 
 const Home = () => {
     const [toggleSidebar, setToggleSidebar] = useState(false);
@@ -38,7 +40,7 @@ const Home = () => {
                 <div className="p-2 w-full flex flex-row justify-between items-center shadow-md">
                     <HiMenu fontSize={40} className="cursor-pointer" onClick={() => setToggleSidebar(true)} />
                     <Link to="/">
-                        LOGO
+                    <img src={logo} alt="logo" className="w-28" />
                     </Link>
                     <Link to={`user-profile/${user?._id}`}>
                         <img src={user?.image} alt="user-pic" className="w-9 h-9 rounded-full " />

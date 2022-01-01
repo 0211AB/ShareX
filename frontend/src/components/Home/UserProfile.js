@@ -58,8 +58,8 @@ const UserProfile = () => {
                 <div className="relative flex flex-col mb-7">
                     <div className="flex flex-col justify-center items-center">
                         <img
-                            className=" w-full h-370 2xl:h-510 shadow-lg object-cover"
-                            src="https://source.unsplash.com/1600x900/?nature,photography,technology"
+                            className="h-370 2xl:h-510 shadow-lg object-cover"
+                            src={`https://api.multiavatar.com/${user._id}.png`}
                             alt="user-pic"
                         />
                         <img
@@ -69,12 +69,12 @@ const UserProfile = () => {
                         />
                     </div>
                     <h1 className="font-bold text-3xl text-center mt-3">
-                        {user.userName}
+                        {user.username}
                     </h1>
                     <div className="absolute top-0 z-1 right-0 p-2">
                         {userId === User.googleId && (
                             <GoogleLogout
-                                clientId={`${process.env.REACT_APP_GOOGLE_API_TOKEN}`}
+                                clientId={`${process.env.REACT_APP_GOOGLE_API_CLIENT_ID}`}
                                 render={(renderProps) => (
                                     <button
                                         type="button"

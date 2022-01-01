@@ -7,22 +7,22 @@ import bgVideo from '../assets/shareX.mp4'
 import { client } from '../client'
 
 const Login = () => {
-    const navigate=useNavigate()
+    const navigate = useNavigate()
 
-    const responseGoogle=(res)=>{
-        localStorage.setItem('user',JSON.stringify(res.profileObj))
-        const {name,googleId,imageUrl}=res.profileObj
-        const document={
-            _id:googleId,
-            _type:'user',
-            username:name,
-            image:imageUrl
+    const responseGoogle = (res) => {
+        localStorage.setItem('user', JSON.stringify(res.profileObj))
+        const { name, googleId, imageUrl } = res.profileObj
+        const document = {
+            _id: googleId,
+            _type: 'user',
+            username: name,
+            image: imageUrl
         }
-         
+
         client.createIfNotExists(document)
-        .then(()=>{
-            navigate('/',{replace:true})
-        })
+            .then(() => {
+                navigate('/', { replace: true })
+            })
     }
     return (
         <div className='flex justify-start items-center flex-col h-screen '>
@@ -37,7 +37,8 @@ const Login = () => {
                 />
             </div>
             <div className='absolute flex flex-col justify-center items-center left-0 top-0 right-0 bottom-0 bg-blackOverlay'>
-            <div className='text-primary font-bold h-60 items-center flex'>Share X</div>
+                <div className='text-primary font-bold h-10 items-center flex'>Share X</div>
+                <div className='text-primary h-40 items-center flex '>A social media like application for sudents<br /> to share notes and images of various subjects<br /> and like others notes or comment on them.</div>
                 <div className='shadow-2xl'>
                     <GoogleLogin
                         clientId={process.env.REACT_APP_GOOGLE_API_CLIENT_ID}

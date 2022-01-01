@@ -1,52 +1,31 @@
 export const categories = [
   {
-    name: 'cars',
-    image: 'https://i.postimg.com/750x/eb/47/44/eb4744eaa3b3ccd89749fa3470e2b0de.jpg',
+    name: 'computer organization and architecture',
+    image: 'https://lastmomenttuitions.com/wp-content/uploads/2021/02/computer-organization-and-architecture-.jpg',
   },
   {
-    name: 'fitness',
-    image: 'https://i.postimg.com/236x/25/14/29/251429345940a47490cc3d47dfe0a8eb.jpg',
+    name: 'assembly and machine language',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQdA_2Vi350-blMARDU4bOdXkXaanfyYmPVg&usqp=CAU',
   },
   {
-    name: 'wallpaper',
-    image: 'https://i.postimg.com/236x/03/48/b6/0348b65919fcbe1e4f559dc4feb0ee13.jpg',
+    name: 'maths 1',
+    image: 'https://lastmomenttuitions.com/wp-content/uploads/2021/03/Engineering-Maths-1-SPPU.jpg',
   },
   {
-    name: 'websites',
-    image: 'https://i.postimg.com/750x/66/b1/29/66b1296d36598122e6a4c5452b5a7149.jpg',
+    name: 'object oriented programming',
+    image: 'https://www.roberthalf.com/sites/default/files/2018-03/Object%20oriented%20programming.jpg',
   },
   {
-    name: 'photo',
-    image: 'https://i.postimg.com/236x/72/8c/b4/728cb43f48ca762a75da645c121e5c57.jpg',
+    name: 'data structures and algorithms',
+    image: 'https://synergisticit.com/wp-content/uploads/2020/09/How-Data-Structures-and-Algorithms-are-important-for-Computer-Science-Graduates.jpg',
   },
   {
-    name: 'food',
-    image: 'https://i.postimg.com/236x/7d/ef/15/7def15ac734837346dac01fad598fc87.jpg',
-  },
-  {
-    name: 'nature',
-    image: 'https://i.postimg.com/236x/b9/82/d4/b982d49a1edd984c4faef745fd1f8479.jpg',
-  },
-  {
-    name: 'art',
-    image: 'https://i.postimg.com/736x/f4/e5/ba/f4e5ba22311039662dd253be33bf5f0e.jpg',
-  }, {
-    name: 'travel',
-    image: 'https://i.postimg.com/236x/fa/95/98/fa95986f2c408098531ca7cc78aee3a4.jpg',
-  },
-  {
-    name: 'quotes',
-    image: 'https://i.postimg.com/236x/46/7c/17/467c17277badb00b638f8ec4da89a358.jpg',
-  }, {
-    name: 'cats',
-    image: 'https://i.postimg.com/236x/6c/3c/52/6c3c529e8dadc7cffc4fddedd4caabe1.jpg',
-  }, {
-    name: 'dogs',
-    image: 'https://i.guim.co.uk/img/media/fe1e34da640c5c56ed16f76ce6f994fa9343d09d/0_174_3408_2046/master/3408.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=67773a9d419786091c958b2ad08eae5e',
+    name: 'database managment system',
+    image: 'https://miro.medium.com/max/1400/1*iDcgUCw_MtRSuKLBGEaJ4Q.jpeg',
   },
   {
     name: 'others',
-    image: 'https://i.postimg.com/236x/2e/63/c8/2e63c82dfd49aca8dccf9de3f57e8588.jpg',
+    image: 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAZlBMVEVNYFX///9tfHM9U0Y2TkFEWU1JXVFFWk7e4d/8/fw7UUTf4eCEj4mao53s7u20u7eiqaVXaV90gnp8iIGss6+HkozBxsPk5+UwSjtkc2rFysfy8/PP09C5v7xrenHM0M2Vn5lbbGJ8ic69AAAEGUlEQVR4nO2Y23aqMBRF2YYApq0oKlYBL///kydYhAS1pR1y7OpY86UtISQzu7ntIPjbRJNn92BsaIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aOi/rE0YhkZF3tP6mUNXqELtvhV7tZRTRXkl7WOjdHBFrMydknud/oah2eczEZntMuM+nYrH5KKoNjJvO2IKWbuKtrCjdBVV+7hI5lHPJDLrshCZJnPtD9gjDKO4FNnkaZWIJIsuUnqV1pQyO/+sTm1XE9dwJq+eYSJleuHolUwl//hSacdu7SnGJzvEZZUepjJ99SP/AMO4kM021FqbRSlTV7HGHCV5P//WdfXlc8N5qBu8cFjDvTo/VuGbyNKZEtFWJNeqKTkO+08dbKhz2Vzm2PtBkt4Ixm9Xj740vN1Da5hdrEwqG+er9iNV2Ly1FFkM6vhgQzvd2i5GJ5HeNBjHsA5a91aUOX+FiawGBXGwYShdw0F0NYDjGNbLTteQbWPTrnE6lcOgmTjc0G04+F+GC5GuRM+dNuK3TfrgGD7DUM1l1u1M8VGKsPtr4J74mw0jNRGvlo3ofug22PJMQxVd8KpNZRsaS3iqxL7kFlVSbE3sH6m+YmTDViK8NqyWrw2Z22drWNTM7H4/W/rfNLnd8I+BUd+I5LiGabZsyIorww6vpjVMSovIamv64VL7Q32c2631wBPN2IYefcN0P2nYetXsmcYo9f4iuQmuiJTJVvXo7BYD4zhyDCdZw/6zeehX+2gosqvM6eaMi7RSayuZDVN84jz8Yi01pZQ3gtg0F85Fhq04v3e3qE9s+/sS75t7H+jxew0DZc/3d4P4J05t0cI9Cp8bcY4xf8EwULm8hE5JvE7yts4Ihs+4W/hbzMh3i/79sLcGjGKoUpk5Qazvh20bj78f6t0T7vixePmrce/4Tp4m8PM0H6U/MDT38jStoV5J4Syn0X7MPM0l17Y659qC/kZ1y/CrXNvqgp9rcye81Z27M3Fb59rSdFdn4R6ea6vzpdWNfGnT9puXMzr3bnC+1BubuMq7c2q8zr3ZNmq+NDifCG/kvJu+hFdj+sOct3aVYt37Xxw1540JDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGhIT40xIeG+NAQHxriQ0N8aIgPDfGJJv8Azfw7H4BzKEgAAAAASUVORK5CYII=',
   },
 ];
 

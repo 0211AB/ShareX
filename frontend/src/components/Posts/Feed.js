@@ -28,13 +28,18 @@ const Feed = () => {
             });
         }
     }, [categoryId]);
-    /*  const ideaName = categoryId || 'new';
-      if (loading) {
-          return (
-              <Spinner message={`We are adding ${ideaName} ideas to your feed!`} />
-          );
-      }
-      */
+
+    const ideaName = categoryId || 'new';
+    if (loading) {
+        return (
+            <Spinner message={`We are loading ${ideaName} posts to your feed!`} />
+        );
+    }
+
+    if (Posts?.length < 1) {
+        return <h1 className="font-bold text-center"> No Posts available</h1>
+    }
+
     return (
         <div>
             {Posts && (

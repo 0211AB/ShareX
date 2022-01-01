@@ -67,34 +67,24 @@ const PostDetail = ({ user }) => {
         <>
             {postDetail && (
                 <div className="flex xl:flex-row flex-col m-auto bg-white" style={{ maxWidth: '1500px', borderRadius: '32px' }}>
-                    <div className="flex justify-center items-center md:items-start flex-initial">
+                    <div className="flex justify-center flex-col items-center md:items-start flex-initial">
                         <img
                             className="rounded-t-3xl rounded-b-lg"
                             src={(postDetail?.image && urlFor(postDetail?.image).url())}
                             alt="user-post"
                         />
+                        <div className='w-full'>
+                            <a href={`${postDetail.image.asset.url}?dl=`} download className="bg-black p-2 text-xl rounded-full flex items-center justify-center text-white opacity-50 hover:opacity-100 my-5"> <MdDownloadForOffline /> </a>
+                        </div>
                     </div>
                     <div className="w-full p-5 flex-1 xl:min-w-620">
-                        <div className="flex items-center justify-between">
-                            <div className="flex gap-2 items-center">
-                                <a
-                                    href={`${postDetail.image.asset.url}?dl=`}
-                                    download
-                                    className="bg-secondaryColor p-2 text-xl rounded-full flex items-center justify-center text-dark opacity-75 hover:opacity-100"
-                                >
-                                    <MdDownloadForOffline />
-                                </a>
-                            </div>
-                        </div>
                         <div>
-                            <h1 className="text-4xl font-bold break-words mt-3">
-                                {postDetail.title}
-                            </h1>
+                            <h1 className="text-4xl font-bold break-words mt-3">  {postDetail.title} </h1>
                             <p className="mt-3">{postDetail.about}</p>
                         </div>
                         <Link to={`/user-profile/${postDetail?.postedBy._id}`} className="flex gap-2 mt-5 items-center bg-white rounded-lg ">
                             <img src={postDetail?.postedBy.image} className="w-10 h-10 rounded-full" alt="user-profile" />
-                            <p className="font-bold">{postDetail?.postedBy.userName}</p>
+                            <p className="font-bold">{postDetail?.postedBy.username}</p>
                         </Link>
                         <h2 className="mt-5 text-2xl">Comments</h2>
                         <div className="max-h-370 overflow-y-auto">
